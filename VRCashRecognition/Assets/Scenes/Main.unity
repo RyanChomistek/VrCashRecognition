@@ -1377,6 +1377,7 @@ GameObject:
   - component: {fileID: 478960568}
   - component: {fileID: 478960567}
   - component: {fileID: 478960566}
+  - component: {fileID: 478960571}
   m_Layer: 0
   m_Name: Wallet
   m_TagString: Untagged
@@ -1463,8 +1464,20 @@ Transform:
   m_Children:
   - {fileID: 334241959}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &478960571
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 478960565}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0.55, z: 0}
 --- !u!1 &490663458
 GameObject:
   m_ObjectHideFlags: 0
@@ -2295,47 +2308,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 937898839}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &955103893
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 955103895}
-  - component: {fileID: 955103894}
-  m_Layer: 0
-  m_Name: CashGenerator
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &955103894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 955103893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05531fe6654485846b68aeb54fde4449, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CashPrefab: {fileID: 1417073794585122, guid: ec676d7a565c3e848a3a3bb17f5d4c11, type: 2}
---- !u!4 &955103895
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 955103893}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.791, y: 1.611, z: -1.243}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1061789926
 GameObject:
   m_ObjectHideFlags: 0
@@ -2513,11 +2485,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4357733255057952, guid: ec676d7a565c3e848a3a3bb17f5d4c11, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4357733255057952, guid: ec676d7a565c3e848a3a3bb17f5d4c11, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.707
       objectReference: {fileID: 0}
     - target: {fileID: 4357733255057952, guid: ec676d7a565c3e848a3a3bb17f5d4c11, type: 2}
       propertyPath: m_LocalRotation.x
