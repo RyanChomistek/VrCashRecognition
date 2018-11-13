@@ -16,7 +16,7 @@ public class CashMachineController : MonoBehaviour {
     public void Awake()
     {
         Instance = this;
-        targetAmount = (int) (0 + Random.value * 5);
+        targetAmount = (int) (25 + Random.value * 50);
     }
 
     public void Update()
