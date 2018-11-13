@@ -20,5 +20,10 @@ public class VisionImpairmentSlider : MonoBehaviour {
         dof.focusDistance = Mathf.Clamp(LM.value, .01f, 1) * 2;
         dof.aperture = Mathf.Clamp(LM.value, .01f, 1) * 2;
         post.profile.depthOfField.settings = dof;
+
+        var vignette = post.profile.vignette.settings;
+        vignette.intensity = 1 - Mathf.Clamp(LM.value, .01f, 1);
+        vignette.smoothness = 1 - Mathf.Clamp(LM.value, .01f, 1);
+        post.profile.vignette.settings = vignette;
     }
 }
