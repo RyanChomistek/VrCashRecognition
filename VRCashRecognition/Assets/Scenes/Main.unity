@@ -3484,6 +3484,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 114516687329829328, guid: ec676d7a565c3e848a3a3bb17f5d4c11,
+        type: 2}
+      propertyPath: onTouchPressedWhileAttached.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 33323690522473614, guid: ec676d7a565c3e848a3a3bb17f5d4c11,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 114350889369605568, guid: ec676d7a565c3e848a3a3bb17f5d4c11,
         type: 2}
       propertyPath: m_havePropertiesChanged
@@ -3493,11 +3503,6 @@ Prefab:
         type: 2}
       propertyPath: m_isInputParsingRequired
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 33323690522473614, guid: ec676d7a565c3e848a3a3bb17f5d4c11,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec676d7a565c3e848a3a3bb17f5d4c11, type: 2}
@@ -3797,7 +3802,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4176517177579900, guid: 7dceb95f11c05914781e156b7ca4391d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4176517177579900, guid: 7dceb95f11c05914781e156b7ca4391d, type: 2}
       propertyPath: m_LocalPosition.y
