@@ -23,10 +23,12 @@ public class EyeRingController : MonoBehaviour {
             foreach(var hit in res)
             {
                 Debug.Log(hit.collider.gameObject);
+
                 var readText = hit.collider.gameObject.GetComponent<ReadText>();
                 if (readText)
                 {
                     readText.Read();
+                    return;
                 }
             }
         }

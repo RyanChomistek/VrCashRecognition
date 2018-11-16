@@ -18,12 +18,14 @@ public class CashInputController : MonoBehaviour
 
             var otherHostObject = other.transform.parent.gameObject;
 
-            FindObjectsOfType<Hand>().ForEach(x => 
+            FindObjectsOfType<Hand>().ForEach(hand => 
             {
-                if(x.currentAttachedObject == otherHostObject)
+                if(hand.currentAttachedObject == otherHostObject)
                 {
-                    x.DetachObject(otherHostObject);
-                    x.HoverUnlock(otherHostObject.gameObject.GetComponent<Interactable>());
+                    //x.DetachObject(otherHostObject);
+                    //x.HoverUnlock(otherHostObject.gameObject.GetComponent<Interactable>());
+                    //x.GetComponent<Interactable>().onDetachedFromHand.;
+                    hand.DetachObject(otherHostObject);
                 }
             }
             );

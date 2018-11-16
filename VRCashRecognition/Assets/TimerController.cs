@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TimerController : MonoBehaviour {
 
@@ -21,7 +22,7 @@ public class TimerController : MonoBehaviour {
         {
             yield return new WaitForEndOfFrame();
             time += Time.deltaTime;
-            GetComponent<TextMeshPro>().text = "" + ((int) time);
+            GetComponent<Text>().text = "Time : " + ((int) time);
         }
     }
 }
