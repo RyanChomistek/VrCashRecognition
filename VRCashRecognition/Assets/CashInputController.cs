@@ -25,18 +25,33 @@ public class CashInputController : MonoBehaviour
                     //x.DetachObject(otherHostObject);
                     //x.HoverUnlock(otherHostObject.gameObject.GetComponent<Interactable>());
                     //x.GetComponent<Interactable>().onDetachedFromHand.;
+                    //hand.DetachObject(otherHostObject);
+                    //otherHostObject.GetComponent<Throwable>().PreventReattach = true;
+                    //otherHostObject.transform.position = new Vector3(100000, 100000, 10000);
                     hand.DetachObject(otherHostObject);
+                    hand.HoverUnlock(otherHostObject.GetComponent<Interactable>());
+                    Destroy(otherHostObject);
+                    //StartCoroutine(DestroyObject(otherHostObject));
+                    return;
                 }
             }
             );
+            
+            //Destroy(otherHostObject);
 
-            Destroy(otherHostObject);
             // Detach this object from the hand
             //hand.DetachObject(other.transform.parent.gameObject);
 
             // Call this to undo HoverLock
             //hand.HoverUnlock(other.transform.parent.gameObject.GetComponent<Interactable>());
         }
+    }
+
+    IEnumerator DestroyObject(GameObject otherHostObject)
+    {
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
+        Destroy(otherHostObject);
     }
 
     private void OnTriggerExit(Collider other)

@@ -47,6 +47,7 @@ namespace Valve.VR.InteractionSystem
 
 		public bool snapAttachEaseInCompleted = false;
 
+        public bool PreventReattach = false;
 
 		//-------------------------------------------------
 		void Awake()
@@ -112,6 +113,11 @@ namespace Valve.VR.InteractionSystem
 		//-------------------------------------------------
 		private void OnAttachedToHand( Hand hand )
 		{
+            if(PreventReattach)
+            {
+                return;
+            }
+
 			attached = true;
 
 			onPickUp.Invoke();
