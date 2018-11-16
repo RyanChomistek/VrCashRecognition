@@ -9,7 +9,7 @@ namespace Valve.VR.InteractionSystem
     public class CheckoutButtonController : MonoBehaviour
     {
         public bool IsActivated = false;
-
+        public GameObject LoadNextSceneButton;
         public void Activate()
         {
             Debug.Log("assadsadsadad");
@@ -23,7 +23,8 @@ namespace Valve.VR.InteractionSystem
                 {
                     //Debug.Log("good to go " + CashMachineController.Instance.AmountChange);
                     PreviousScoresController.Instance.AddPrevScore(CashMachineController.Instance.AmountChange * 10 + (int) TimerController.Instance.time);
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                    LoadNextSceneButton.SetActive(true);
+                    //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 }
             }
         }
