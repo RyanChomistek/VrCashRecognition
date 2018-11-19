@@ -8,6 +8,12 @@ public class VisionImpairmentSlider : MonoBehaviour {
 
     public PostProcessingBehaviour post;
     public LinearMapping LM;
+
+    public delegate void OnSliderChangedDelegate();
+
+    [HideInInspector]
+    public event OnSliderChangedDelegate OnSliderChanged;
+
     // Use this for initialization
     void Start () {
         //post.depthOfField.settings.
@@ -25,5 +31,10 @@ public class VisionImpairmentSlider : MonoBehaviour {
         vignette.intensity = 1 - Mathf.Clamp(LM.value, .01f, 1);
         vignette.smoothness = 1 - Mathf.Clamp(LM.value, .01f, 1);
         post.profile.vignette.settings = vignette;
+    }
+
+    public void SliderChanged()
+    {
+        OnSliderChanged.Invoke();
     }
 }
