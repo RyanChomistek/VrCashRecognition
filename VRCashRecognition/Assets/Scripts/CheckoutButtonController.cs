@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Events;
+using TMPro;
 
 namespace Valve.VR.InteractionSystem
 {
@@ -22,8 +23,11 @@ namespace Valve.VR.InteractionSystem
                 if(CashMachineController.Instance.AmountLeft == 0)
                 {
                     //Debug.Log("good to go " + CashMachineController.Instance.AmountChange);
-                    PreviousScoresController.Instance.AddPrevScore(CashMachineController.Instance.AmountChange * 10 + (int) TimerController.Instance.time);
+                    int score = CashMachineController.Instance.AmountChange * 10 + (int)TimerController.Instance.time;
+                    PreviousScoresController.Instance.AddPrevScore(score);
+
                     LoadNextSceneButton.SetActive(true);
+                    LoadNextSceneButton.GetComponentInChildren<TextMeshPro>().text = $"Your score was : {score}. \n Press here to restart.";
                     //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 }
             }
