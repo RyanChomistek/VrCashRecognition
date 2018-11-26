@@ -14,6 +14,12 @@ public class TrackerController : MonoBehaviour {
     private void Update()
     {
         controller = GetComponent<Hand>().controller;
+        Debug.Log(controller);
+        if (controller == null)
+        {
+            return;
+        }
+        
         prevTriggerIsPressed = triggerIsPressed;
         triggerIsPressed = controller.GetPress(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger);
     }
