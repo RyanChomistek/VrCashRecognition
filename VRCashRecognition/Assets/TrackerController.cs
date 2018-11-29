@@ -13,7 +13,8 @@ public class TrackerController : MonoBehaviour {
 
     private void Update()
     {
-        controller = GetComponent<Hand>().controller;
+        trackedObject = GetComponent<SteamVR_TrackedObject>();
+        controller = SteamVR_Controller.Input((int) trackedObject.index);
         Debug.Log(controller);
         if (controller == null)
         {

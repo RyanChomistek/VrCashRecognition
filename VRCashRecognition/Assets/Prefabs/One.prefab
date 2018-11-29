@@ -106,7 +106,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1417073794585122}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.621769, y: 1.09, z: -1.2817196}
+  m_LocalPosition: {x: 0.42795143, y: 0.7544, z: -0.7331851}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4229472261661852}
@@ -311,9 +311,9 @@ MonoBehaviour:
   - Amount: 5
     Mat: {fileID: 2100000, guid: 560be563ff4346d4ebafa60232c96817, type: 2}
   - Amount: 10
-    Mat: {fileID: 2100000, guid: 560be563ff4346d4ebafa60232c96817, type: 2}
+    Mat: {fileID: 2100000, guid: 4b0c7f1b3be2ae443b1e2fa3e8c58d84, type: 2}
   - Amount: 20
-    Mat: {fileID: 2100000, guid: 560be563ff4346d4ebafa60232c96817, type: 2}
+    Mat: {fileID: 2100000, guid: 640d35a696733f34c87de4aa63ac3981, type: 2}
   Mesh: {fileID: 23752325144533524}
 --- !u!114 &114350889369605568
 MonoBehaviour:
@@ -538,6 +538,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0083, y: 0.0048}
+  m_AnchoredPosition: {x: -0.0083, y: -0.0011}
   m_SizeDelta: {x: 3.71, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}

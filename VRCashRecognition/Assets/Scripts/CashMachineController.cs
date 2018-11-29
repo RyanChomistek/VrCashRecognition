@@ -21,7 +21,7 @@ public class CashMachineController : MonoBehaviour {
 
     public void Update()
     {
-        AmountLeftText.text = $"{AmountLeft}";
+        AmountLeftText.text = $"{AmountLeft} Dollars left";
     }
 
     public void OnCheck()

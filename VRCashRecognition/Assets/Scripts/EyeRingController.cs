@@ -4,8 +4,7 @@ using UnityEngine;
 using Valve.VR.InteractionSystem;
 
 public class EyeRingController : MonoBehaviour {
-
-    public Hand AttachedHand;
+    
     public TrackerController AttachedTracker;
 
     public delegate void OnEyeringUsedDelegate();
@@ -15,8 +14,7 @@ public class EyeRingController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        AttachedHand = transform.parent.GetComponent<Hand>();
-        AttachedTracker = transform.parent.GetComponent<TrackerController>();
+        //AttachedTracker = transform.parent.GetComponent<TrackerController>();
     }
 	
 	// Update is called once per frame
